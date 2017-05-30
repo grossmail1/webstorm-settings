@@ -1,19 +1,19 @@
 <templateSet group="user">
   <template name="bind(this)" value="$SELECTION$ = $SELECTION$.bind(this)" description="used to bind 'this' in constructor" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="Handlebars" value="false" />
-      <option name="DART" value="false" />
       <option name="CSS" value="false" />
-      <option name="OTHER" value="true" />
-      <option name="JSP" value="false" />
-      <option name="JSON" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="DART" value="false" />
       <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="Handlebars" value="false" />
+      <option name="JADE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="JSP" value="false" />
+      <option name="OTHER" value="true" />
       <option name="TypeScript" value="false" />
       <option name="XML" value="false" />
-      <option name="JADE" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="HTML" value="false" />
     </context>
   </template>
   <template name="interp" value="${$SELECTION$}" description="wraps js variable for string interpolation" toReformat="false" toShortenFQNames="true">
