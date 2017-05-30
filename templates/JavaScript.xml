@@ -1,20 +1,17 @@
 <templateSet group="JavaScript">
   <template name="double" value="&quot;$SELECTION$&quot;" description="turns var into string" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="CSS" value="false" />
-      <option name="OTHER" value="true" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="HTML" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="HAML" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="DART" value="false" />
-      <option name="JSP" value="false" />
       <option name="XML" value="false" />
-      <option name="Handlebars" value="false" />
-      <option name="JADE" value="false" />
       <option name="JSON" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="single" value="'$SELECTION$'" description="wraps in single quotes" toReformat="false" toShortenFQNames="true">
@@ -22,13 +19,15 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="interp" value="${$SELECTION$}" description="wraps js variable for string interpolation" toReformat="false" toShortenFQNames="true" />
+  <template name="interp" value="${$SELECTION$}" description="wraps js variable for string interpolation" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
   <template name="cl" value="console.log('$VAR$')" description="console.log" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="JAVA_SCRIPT" value="true" />
       <option name="HTML" value="true" />
       <option name="JSP" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
   <template name="test" value="test('$VAR$', () =&gt; {&#10;&#9;// setup test&#10;&#10;&#9;// run test&#10;&#10;&#9;// verify results&#10;&#10;})" shortcut="TAB" description="test" toReformat="true" toShortenFQNames="true">
