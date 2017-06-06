@@ -6,10 +6,8 @@
       <mapping pattern="Swift-Creek" type="HTML" />
       <mapping pattern="readAlongOpfParser" type="JavaScript" />
       <mapping pattern="younglife" type="Native" />
-      <mapping pattern="FixedReaderHeader.scss" type="PLAIN_TEXT" />
-      <mapping pattern="TestPublishedReviewMapper.xml" type="PLAIN_TEXT" />
-      <mapping pattern="randomNumber.html" type="PLAIN_TEXT" />
       <mapping ext="otf" type="PLAIN_TEXT" />
+      <mapping pattern="FixedReaderHeader" type="SCSS" />
       <mapping pattern="no_id_from_borrow" type="XML" />
       <mapping pattern="AddressMapper" type="XML" />
       <mapping pattern="music_kind_title.xml" type="XML" />
