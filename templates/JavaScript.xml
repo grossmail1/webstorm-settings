@@ -47,7 +47,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="pfunc" value="PropTypes.func.isRequired" toReformat="true" toShortenFQNames="true">
+  <template name="pfunc" value="PropTypes.func.isRequired" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
