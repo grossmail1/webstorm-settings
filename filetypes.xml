@@ -5,6 +5,7 @@
       <mapping pattern="randomNumber" type="HTML" />
       <mapping pattern="Swift-Creek" type="HTML" />
       <mapping pattern="apple-app-site-association" type="JSON" />
+      <mapping pattern="changePropTypes" type="JavaScript" />
       <mapping pattern="readAlongOpfParser" type="JavaScript" />
       <mapping pattern="younglife" type="Native" />
       <mapping ext="otf" type="PLAIN_TEXT" />
