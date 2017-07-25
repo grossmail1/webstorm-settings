@@ -8,12 +8,13 @@
       <mapping pattern="changePropTypes" type="JavaScript" />
       <mapping pattern="readAlongOpfParser" type="JavaScript" />
       <mapping pattern="younglife" type="Native" />
+      <mapping pattern="jank_books" type="PLAIN_TEXT" />
       <mapping ext="md" type="PLAIN_TEXT" />
       <mapping ext="otf" type="PLAIN_TEXT" />
       <mapping pattern="FixedReaderHeader" type="SCSS" />
       <mapping pattern="AddressMapper" type="XML" />
-      <mapping pattern="no_id_from_borrow" type="XML" />
       <mapping pattern="music_kind_title.xml" type="XML" />
+      <mapping pattern="no_id_from_borrow" type="XML" />
       <mapping ext="jelly" type="XML" />
     </extensionMap>
   </component>
