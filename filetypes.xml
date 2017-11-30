@@ -12,6 +12,7 @@
       <mapping pattern=".env" type="PLAIN_TEXT" />
       <mapping pattern="jank_books" type="PLAIN_TEXT" />
       <mapping pattern=".env.prod" type="PLAIN_TEXT" />
+      <mapping pattern=".env.dev" type="PLAIN_TEXT" />
       <mapping pattern=".env.test" type="PLAIN_TEXT" />
       <mapping ext="md" type="PLAIN_TEXT" />
       <mapping ext="otf" type="PLAIN_TEXT" />
