@@ -10,13 +10,14 @@
       <mapping pattern="readAlongOpfParser" type="JavaScript" />
       <mapping pattern="younglife" type="Native" />
       <mapping pattern="librarianReducer" type="PLAIN_TEXT" />
+      <mapping pattern=".env.prod" type="PLAIN_TEXT" />
+      <mapping pattern="prestoPlayer" type="PLAIN_TEXT" />
       <mapping pattern=".env" type="PLAIN_TEXT" />
       <mapping pattern="jank_books" type="PLAIN_TEXT" />
-      <mapping pattern=".env.prod" type="PLAIN_TEXT" />
+      <mapping pattern=".env.test" type="PLAIN_TEXT" />
+      <mapping pattern="TrendingTitlesForm" type="PLAIN_TEXT" />
       <mapping pattern=".env.media-dev" type="PLAIN_TEXT" />
       <mapping pattern=".env.dev" type="PLAIN_TEXT" />
-      <mapping pattern=".env.test" type="PLAIN_TEXT" />
-      <mapping pattern="prestoPlayer" type="PLAIN_TEXT" />
       <mapping pattern="ChromecastActionTypes" type="PLAIN_TEXT" />
       <mapping pattern="emailRoutes" type="PLAIN_TEXT" />
       <mapping ext="md" type="PLAIN_TEXT" />
