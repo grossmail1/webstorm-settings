@@ -24,6 +24,7 @@
       <mapping pattern="emailRoutes" type="PLAIN_TEXT" />
       <mapping ext="md" type="PLAIN_TEXT" />
       <mapping ext="example" type="PLAIN_TEXT" />
+      <mapping ext="toml" type="PLAIN_TEXT" />
       <mapping ext="media-test" type="PLAIN_TEXT" />
       <mapping ext="otf" type="PLAIN_TEXT" />
       <mapping pattern="FixedReaderHeader" type="SCSS" />
