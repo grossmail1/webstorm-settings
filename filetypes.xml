@@ -2,20 +2,22 @@
   <component name="FileTypeManager" version="17">
     <ignoreFiles list="*.hprof;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
     <extensionMap>
+      <mapping pattern="*.js.flow" type="Flow" />
+      <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="randomNumber" type="HTML" />
       <mapping pattern="Swift-Creek" type="HTML" />
       <mapping pattern="apple-app-site-association" type="JSON" />
-      <mapping pattern="VideoActions.js" type="JavaScript" />
       <mapping pattern="changePropTypes" type="JavaScript" />
+      <mapping pattern="VideoActions.js" type="JavaScript" />
       <mapping pattern="readAlongOpfParser" type="JavaScript" />
       <mapping pattern="younglife" type="Native" />
-      <mapping pattern="librarianReducer" type="PLAIN_TEXT" />
       <mapping pattern=".env-EXAMPLE" type="PLAIN_TEXT" />
       <mapping pattern=".env.prod" type="PLAIN_TEXT" />
-      <mapping pattern="prestoPlayer" type="PLAIN_TEXT" />
-      <mapping pattern=".env" type="PLAIN_TEXT" />
       <mapping pattern="jank_books" type="PLAIN_TEXT" />
+      <mapping pattern=".env" type="PLAIN_TEXT" />
+      <mapping pattern="prestoPlayer" type="PLAIN_TEXT" />
       <mapping pattern="SearchGraphqlProvider" type="PLAIN_TEXT" />
+      <mapping pattern="librarianReducer" type="PLAIN_TEXT" />
       <mapping pattern=".env.local" type="PLAIN_TEXT" />
       <mapping pattern=".env.test" type="PLAIN_TEXT" />
       <mapping pattern="TrendingTitlesForm" type="PLAIN_TEXT" />
@@ -23,9 +25,8 @@
       <mapping pattern=".env.dev" type="PLAIN_TEXT" />
       <mapping pattern="ChromecastActionTypes" type="PLAIN_TEXT" />
       <mapping pattern="emailRoutes" type="PLAIN_TEXT" />
-      <mapping ext="md" type="PLAIN_TEXT" />
-      <mapping ext="example" type="PLAIN_TEXT" />
       <mapping ext="toml" type="PLAIN_TEXT" />
+      <mapping ext="example" type="PLAIN_TEXT" />
       <mapping ext="media-test" type="PLAIN_TEXT" />
       <mapping ext="otf" type="PLAIN_TEXT" />
       <mapping pattern="FixedReaderHeader" type="SCSS" />
