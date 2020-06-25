@@ -26,6 +26,7 @@
       <mapping pattern="librarianReducer" type="PLAIN_TEXT" />
       <mapping pattern="TrendingTitlesForm" type="PLAIN_TEXT" />
       <mapping pattern=".env.local" type="PLAIN_TEXT" />
+      <mapping ext="local" type="PLAIN_TEXT" />
       <mapping ext="toml" type="PLAIN_TEXT" />
       <mapping ext="example" type="PLAIN_TEXT" />
       <mapping ext="djdfh" type="PLAIN_TEXT" />
