@@ -1,5 +1,5 @@
 <templateSet group="JavaScript">
-  <template name="double" value="&quot;$SELECTION$&quot;" description="turns var into string" toReformat="true" toShortenFQNames="true">
+  <template name="double" value="&quot;$SELECTION$&quot;" description="turns var into string" toReformat="true" toShortenFQNames="true" deactivated="true">
     <context>
       <option name="CSS" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
@@ -14,13 +14,13 @@
       <option name="XML" value="false" />
     </context>
   </template>
-  <template name="single" value="'$SELECTION$'" description="wraps in single quotes" toReformat="false" toShortenFQNames="true">
+  <template name="single" value="'$SELECTION$'" description="wraps in single quotes" toReformat="false" toShortenFQNames="true" deactivated="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="interp" value="${$SELECTION$}" description="wraps js variable for string interpolation" toReformat="false" toShortenFQNames="true" />
-  <template name="cl" value="console.log('$VAR$')" description="console.log" toReformat="false" toShortenFQNames="true">
+  <template name="interp" value="${$SELECTION$}" description="wraps js variable for string interpolation" toReformat="false" toShortenFQNames="true" deactivated="true" />
+  <template name="cl" value="console.log('$VAR$', )" description="console.log" toReformat="false" toShortenFQNames="true" deactivated="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
@@ -28,40 +28,141 @@
       <option name="JSP" value="true" />
     </context>
   </template>
-  <template name="test" value="test('$VAR$', () =&gt; {&#10;&#9;// setup test&#10;&#10;&#9;// run test&#10;&#10;&#9;// verify results&#10;&#10;})" shortcut="TAB" description="test" toReformat="true" toShortenFQNames="true">
+  <template name="test" value="test('$VAR$', () =&gt; {&#10;&#9;// setup test&#10;&#10;&#9;// run test&#10;&#10;&#9;// verify results&#10;&#10;})" shortcut="TAB" description="test" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="desc" value="describe('$VAR1$', () =&gt; {&#10;&#9;test('$VAR2$', () =&gt; {&#10;&#9;&#9;// setup test&#10;&#10;&#9;&#9;// run test&#10;&#10;&#9;&#9;// verify results&#10;&#10;&#9;})&#10;&#10;})" shortcut="TAB" description="describe block in js test" toReformat="true" toShortenFQNames="true">
+  <template name="desc" value="describe('$VAR1$', () =&gt; {&#10;&#9;test('$VAR2$', () =&gt; {&#10;&#9;&#9;// setup test&#10;&#10;&#9;&#9;// run test&#10;&#10;&#9;&#9;// verify results&#10;&#10;&#9;})&#10;&#10;})" shortcut="TAB" description="describe block in js test" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="np" value="new Promise((resolve, reject) =&gt; {&#10;    $VAR$&#10;})" description="new Promise" toReformat="true" toShortenFQNames="true">
+  <template name="np" value="new Promise((resolve, reject) =&gt; {&#10;    $VAR$&#10;})" description="new Promise" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="pfunc" value="PropTypes.func.isRequired" description="" toReformat="true" toShortenFQNames="true">
+  <template name="pfunc" value="PropTypes.func.isRequired" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="cst" value="@connect(state =&gt; {&#10;&#9;return {&#10;&#9;&#9;$VAR1$&#10;&#9;}&#10;})" description="connecting state" toReformat="true" toShortenFQNames="true">
+  <template name="cst" value="@connect(state =&gt; {&#10;&#9;return {&#10;&#9;&#9;$VAR1$&#10;&#9;}&#10;})" description="connecting state" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ac" value="export function $NAME$() {&#10;    return {&#10;        type: $END$&#10;    }&#10;}" description="Action creator" toReformat="false" toShortenFQNames="true">
+  <template name="ac" value="export function $NAME$() {&#10;    return {&#10;        type: $END$&#10;    }&#10;}" description="Action creator" toReformat="false" toShortenFQNames="true" deactivated="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
+  </template>
+  <template name="fori" value="for($VARKIND$ $INDEX$ = 0; $INDEX$ &lt; $LIMIT$; $INDEX$++) {&#10;  $END$&#10;}" description="Create iteration loop" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VARKIND" expression="jsSuggestDefaultVariableKind(false)" defaultValue="var" alwaysStopAt="false" />
+    <variable name="INDEX" expression="jsSuggestIndexName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="LIMIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="iter" value="for ($VARKIND$ $VAR$ of $ARRAY$) {&#10;  $END$&#10;}" description="Iterate (for..of)" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VARKIND" expression="jsSuggestDefaultVariableKind()" defaultValue="var" alwaysStopAt="false" />
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array &quot;" alwaysStopAt="false" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="itera" value="for await ($VARKIND$ $VAR$ of $ARRAY$) {&#10;  $END$&#10;}" description="Iterate (for..of)" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VARKIND" expression="jsSuggestDefaultVariableKind()" defaultValue="var" alwaysStopAt="false" />
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array &quot;" alwaysStopAt="false" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="itin" value="for ($VARKIND$ $VAR$ in $ARRAY$) {&#10;  $END$&#10;}" description="Iterate (for..in)" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VARKIND" expression="jsSuggestDefaultVariableKind()" defaultValue="var" alwaysStopAt="false" />
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array &quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="itar" value="for ($VARKIND$ $INDEX$ = 0; $INDEX$ &lt; $ARRAY$.length; $INDEX$++) {&#10;  $VARKIND2$ $VAR$ = $ARRAY$[$INDEX$];&#10;  $END$&#10;}" description="Iterate elements of array" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VARKIND" expression="jsSuggestDefaultVariableKind(false)" defaultValue="var" alwaysStopAt="false" />
+    <variable name="INDEX" expression="jsSuggestIndexName()" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="VARKIND2" expression="jsSuggestDefaultVariableKind()" defaultValue="var" alwaysStopAt="false" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ritar" value="for ($VARKIND$ $INDEX$ = $ARRAY$.length - 1; $INDEX$ &gt;= 0; $INDEX$--) {&#10;  $VARKIND2$ $VAR$ = $ARRAY$[$INDEX$];&#10;  $END$&#10;}" description="Iterate elements of array in reverse order" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="VARKIND" expression="jsSuggestDefaultVariableKind(false)" defaultValue="var" alwaysStopAt="false" />
+    <variable name="INDEX" expression="jsSuggestIndexName()" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="VARKIND2" expression="jsSuggestDefaultVariableKind()" defaultValue="var" alwaysStopAt="false" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="importitems" value="import {$ITEM$$END$} from &quot;$MODULE$&quot;;&#10;" description="Import statement - import {b} from 'a'" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="importns" value="import * as $ITEM$ from &quot;$MODULE$&quot;;&#10;$END$" description="Import statement - import * as b from 'a'" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="jsSuggestImportedEntityName()" defaultValue="Namespace" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="importdefault" value="import $ITEM$ from &quot;$MODULE$&quot;;&#10;$END$" description="Import statement - import b from 'a'" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="jsSuggestImportedEntityName()" defaultValue="Namespace" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="exportall" value="export * from &quot;$MODULE$&quot;;&#10;$END$" description="Export statement - export * from 'a'" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="exportfrom" value="export {$ITEM$$END$} from &quot;$MODULE$&quot;;&#10;" description="Export statement - export {b} from 'a'" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="MODULE" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="exportitems" value="export {$ITEM$$END$};&#10;" description="Export statement - export {b}" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="log" value="console.log($END$)" description="console.log()" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="error" value="console.error($END$)" description="console.error()" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="warn" value="console.warn($END$)" description="console.warn()" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="info" value="console.info($END$)" description="console.info()" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="trace" value="console.trace($END$)" description="console.trace()" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="assert" value="console.assert($END$)" description="console.assert()" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="us" value="&quot;use strict&quot;;&#10;$END$" description="Inserts 'use strict' statement" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
+  <template name="ref" value="///&lt;reference path=&quot;$PATH$&quot;/&gt;&#10;$END$" description="Inserts reference path comment" toReformat="true" toShortenFQNames="false" deactivated="true">
+    <variable name="PATH" expression="complete()" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="defn" value="define([&quot;$MODULE_REF$&quot;], function($MODULE_VAR$) {&#10;$END$&#10;});" description="Inserts define() expression" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="MODULE_REF" expression="complete()" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="MODULE_VAR" expression="jsDefineParameter(MODULE_REF)" defaultValue="mod" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="flow" value="// @flow" description="Inserts @flow annotation" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <context />
   </template>
 </templateSet>
