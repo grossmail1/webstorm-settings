@@ -20,7 +20,7 @@
     </context>
   </template>
   <template name="interp" value="${$SELECTION$}" description="wraps js variable for string interpolation" toReformat="false" toShortenFQNames="true" deactivated="true" />
-  <template name="cl" value="console.log('$VAR$', )" description="console.log" toReformat="false" toShortenFQNames="true" deactivated="true">
+  <template name="cl" value="console.log('$VAR$',$VAR$)" description="console.log" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
