@@ -5,6 +5,7 @@
       <mapping pattern="randomNumber" type="HTML" />
       <mapping pattern="Swift-Creek" type="HTML" />
       <mapping pattern="apple-app-site-association" type="JSON" />
+      <removed_mapping ext="graphqlconfig" type="JSON" />
       <mapping pattern="VideoActions.js" type="JavaScript" />
       <mapping pattern="changePropTypes" type="JavaScript" />
       <mapping pattern="readAlongOpfParser" type="JavaScript" />
