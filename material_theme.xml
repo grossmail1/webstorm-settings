@@ -1,8 +1,5 @@
 <application>
   <component name="MaterialThemeConfig">
-    <option name="compactMenus" value="false" />
-    <option name="compactStatusBar" value="false" />
-    <option name="compactTables" value="false" />
     <option name="highContrast" value="true" />
     <option name="premium" value="true" />
     <option name="allowDataCollection" value="true" />
@@ -11,6 +8,5 @@
     <option name="accentColor" value="416a9b" />
     <option name="selectedTheme" value="NATIVE" />
     <option name="userId" value="7ff09945:1655d625532:-8000" />
-    <option name="version" value="6.1.1" />
   </component>
 </application>
