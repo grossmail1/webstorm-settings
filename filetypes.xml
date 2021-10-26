@@ -33,6 +33,7 @@
       <mapping ext="djdfh" type="PLAIN_TEXT" />
       <mapping ext="media-test" type="PLAIN_TEXT" />
       <mapping ext="local" type="PLAIN_TEXT" />
+      <mapping ext="itermcolors" type="PLAIN_TEXT" />
       <mapping pattern="FixedReaderHeader" type="SCSS" />
       <mapping pattern="AddressMapper" type="XML" />
       <mapping pattern="music_kind_title.xml" type="XML" />
