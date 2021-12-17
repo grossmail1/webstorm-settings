@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="18">
     <ignoreFiles list="*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs" />
     <extensionMap>
+      <mapping pattern="useQueryParams" type="AUTO_DETECTED" />
       <mapping pattern="Swift-Creek" type="HTML" />
       <mapping pattern="randomNumber" type="HTML" />
       <mapping pattern="apple-app-site-association" type="JSON" />
